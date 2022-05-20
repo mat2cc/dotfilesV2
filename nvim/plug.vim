@@ -22,6 +22,9 @@ Plug 'Yggdroot/indentLine'
 
 Plug 'rafamadriz/friendly-snippets'
 
+" rust
+Plug 'rust-lang/rust.vim'
+
 " Prisma
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pantharshit00/vim-prisma' 
