@@ -1,9 +1,12 @@
 /*
-!fish/config.fish
-!fish/completions
-!fish/functions
 !nvim/
 !.gitignore
 !tmux/
 
+# fish
+!fish/
+fish/*
+!fish/completions/
+!fish/functions/
+!fish/config.fish
 
