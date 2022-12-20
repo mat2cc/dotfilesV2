@@ -3,10 +3,11 @@
 !.gitignore
 !tmux/
 
-# fish
+# fish including only the useful stuff
 !fish/
 fish/*
 !fish/completions/
 !fish/functions/
 !fish/config.fish
+!fish/conf.d
 
