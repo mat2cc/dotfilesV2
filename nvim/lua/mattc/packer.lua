@@ -6,14 +6,15 @@ return require("packer").startup(function(use)
   -- themes
   use { "catppuccin/nvim", as = "catppuccin" }
   use("morhetz/gruvbox")
+  use ("folke/tokyonight.nvim")
 
   -- telescope
   use {
     "nvim-telescope/telescope.nvim", tag = "0.1.x",
     requires = { { "nvim-lua/plenary.nvim" } }
   }
-  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  use {'nvim-telescope/telescope-ui-select.nvim' } -- select for code actions
+  use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
+  use {"nvim-telescope/telescope-ui-select.nvim" } -- select for code actions
 
   use("windwp/nvim-ts-autotag")
 
@@ -26,6 +27,7 @@ return require("packer").startup(function(use)
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
   use("Shougo/defx.nvim", { run = ":UpdateRemotePlugins" })
+
   use({
     "nvim-lualine/lualine.nvim",
     requires = { "kyazdani42/nvim-web-devicons", opt = true }
