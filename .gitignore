@@ -10,4 +10,5 @@ fish/*
 !fish/functions/
 !fish/config.fish
 !fish/conf.d
+!fish/fish_plugins
 
