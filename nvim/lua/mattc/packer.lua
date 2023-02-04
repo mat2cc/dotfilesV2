@@ -5,8 +5,10 @@ return require("packer").startup(function(use)
 
   -- themes
   use { "catppuccin/nvim", as = "catppuccin" }
+  use({ 'rose-pine/neovim', as = 'rose-pine' })
   use("morhetz/gruvbox")
-  use ("folke/tokyonight.nvim")
+  use("folke/tokyonight.nvim")
+  use("Shatur/neovim-ayu")
 
   -- telescope
   use {
@@ -14,7 +16,7 @@ return require("packer").startup(function(use)
     requires = { { "nvim-lua/plenary.nvim" } }
   }
   use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
-  use {"nvim-telescope/telescope-ui-select.nvim" } -- select for code actions
+  use { "nvim-telescope/telescope-ui-select.nvim" } -- select for code actions
 
   use("windwp/nvim-ts-autotag")
 

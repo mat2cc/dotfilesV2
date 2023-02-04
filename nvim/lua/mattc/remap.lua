@@ -37,6 +37,11 @@ vim.keymap.set("n", "<leader>n", [[:%s/\<<C-r><C-w>\>//gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
 
+vim.keymap.set("n", "<leader>cj", ":cnext<CR>")
+vim.keymap.set("n", "<leader>ck", ":cprev<CR>")
+vim.keymap.set("n", "<leader>co", ":copen<CR>")
+vim.keymap.set("n", "<leader>cc", ":cclose<CR>")
+
 -- using defx instead of netrw
 -- vim.keymap.set("n", "ssf", "<cmd>Ex<CR>") 
 

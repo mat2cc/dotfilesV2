@@ -4,5 +4,6 @@ require("mattc")
 -- gruvbox
 -- tokyonight
 -- tokyonight-moon, tokyonight-night, tokyonight-storm, tokyonight-day
-vim.cmd.colorscheme "catppuccin-macchiato"
+-- rose-pine
+vim.cmd.colorscheme "rose-pine"
 

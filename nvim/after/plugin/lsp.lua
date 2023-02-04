@@ -70,10 +70,10 @@ local augroup = vim.api.nvim_create_augroup("TodoHighlighting", {})
 lsp.on_attach(function(client, bufnr)
   local opts = { buffer = bufnr, remap = false }
 
-  if client.name == "eslint" then
-    vim.cmd.LspStop('eslint')
-    return
-  end
+  -- if client.name == "eslint" then
+  --   vim.cmd.LspStop('eslint')
+  --   return
+  -- end
 
 
   -- commented format on save for now
