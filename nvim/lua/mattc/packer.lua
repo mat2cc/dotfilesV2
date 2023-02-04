@@ -4,15 +4,11 @@ return require("packer").startup(function(use)
   use("wbthomason/packer.nvim")
 
   -- themes
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use({ "catppuccin/nvim", as = "catppuccin" })
   use({ 'rose-pine/neovim', as = 'rose-pine' })
   use("morhetz/gruvbox")
   use("Shatur/neovim-ayu")
-  use ("folke/tokyonight.nvim")
-  use({
-    'rose-pine/neovim',
-    as = 'rose-pine'
-  })
+  use("folke/tokyonight.nvim")
 
   -- telescope
   use {
