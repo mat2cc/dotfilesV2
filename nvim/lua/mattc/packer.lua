@@ -7,8 +7,12 @@ return require("packer").startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" }
   use({ 'rose-pine/neovim', as = 'rose-pine' })
   use("morhetz/gruvbox")
-  use("folke/tokyonight.nvim")
   use("Shatur/neovim-ayu")
+  use ("folke/tokyonight.nvim")
+  use({
+    'rose-pine/neovim',
+    as = 'rose-pine'
+  })
 
   -- telescope
   use {
