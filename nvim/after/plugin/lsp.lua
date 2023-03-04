@@ -5,7 +5,6 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'tsserver',
   'eslint',
-  'sumneko_lua',
   'rust_analyzer',
 })
 
@@ -46,15 +45,27 @@ local cmp_mappings = lsp.defaults.cmp_mappings({
   end, { "i", "s" }),
 })
 
+local cmp_config = lsp.defaults.cmp_config({
+  window = {
+    completion = cmp.config.window.bordered()
+  }
+})
+cmp.setup(cmp_config)
+
+-- lsp.setup_nvim_cmp({
+--   sources = {
+--   }
+-- })
+
 -- disable completion with tab
 -- this helps with copilot setup
 cmp_mappings['<Tab>'] = nil
 cmp_mappings['<S-Tab>'] = nil
 
 lsp.setup_nvim_cmp({
-  mapping = cmp_mappings
+  mapping = cmp_mappings,
+  keyword_length = 1
 })
-
 
 lsp.set_preferences({
   suggest_lsp_servers = false,
