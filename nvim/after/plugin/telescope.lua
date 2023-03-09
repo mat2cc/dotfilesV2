@@ -23,7 +23,7 @@ require('telescope').setup {
 -- load_extension, somewhere after setup function:
 require('telescope').load_extension('fzf')
 
-nnoremap("<leader>pf", builtin.find_files)
+nnoremap("<leader>ff", builtin.find_files)
 nnoremap("<leader>fi", builtin.git_files)
 nnoremap("<leader>ps", function()
   builtin.grep_string({ search = vim.fn.input("Grep > ") })

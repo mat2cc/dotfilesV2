@@ -9,15 +9,7 @@ return require("packer").startup(function(use)
     use("morhetz/gruvbox")
     use("Shatur/neovim-ayu")
     use("folke/tokyonight.nvim")
-    use({
-        "kylechui/nvim-surround",
-        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
-        config = function()
-          require("nvim-surround").setup({
-              -- Configuration here, or leave empty to use defaults
-          })
-        end
-    })
+    use ("loctvl842/monokai-pro.nvim")
 
     -- telescope
     use {
@@ -70,24 +62,44 @@ return require("packer").startup(function(use)
     use("folke/zen-mode.nvim")
     use("github/copilot.vim")
 
-    use {
-        "nvim-neorg/neorg",
+    use({
+        "kylechui/nvim-surround",
+        tag = "*", -- Use for stability; omit to use `main` branch for the latest features
         config = function()
-            require('neorg').setup {
-                load = {
-                    ["core.defaults"] = {}, -- Loads default behaviour
-                    ["core.norg.concealer"] = {}, -- Adds pretty icons to your documents
-                    ["core.norg.dirman"] = { -- Manages Neorg workspaces
-                        config = {
-                            workspaces = {
-                                notes = "~/notes",
-                            },
+          require("nvim-surround").setup({
+              -- Configuration here, or leave empty to use defaults
+          })
+        end
+    })
+
+    use {
+    "nvim-neorg/neorg",
+    tag = "*",
+    config = function()
+        require('neorg').setup {
+            load = {
+                ["core.defaults"] = {}, -- Loads default behaviour
+                ["core.norg.concealer"] = {
+                  icons = {
+                    todo = {
+                      undone = {
+                        icon = "_"
+                      }
+                    }
+                  }
+                }, -- Adds pretty icons to your documents
+                ["core.norg.dirman"] = { -- Manages Neorg workspaces
+                    config = {
+                        workspaces = {
+                            notes = "~/notes",
                         },
                     },
                 },
-            }
-        end,
-        run = ":Neorg sync-parsers",
-        requires = "nvim-lua/plenary.nvim",
-    }
+            },
+        }
+    end,
+    run = ":Neorg sync-parsers",
+    requires = "nvim-lua/plenary.nvim",
+}
+
 end)

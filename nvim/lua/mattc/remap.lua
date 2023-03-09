@@ -31,7 +31,7 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 
 vim.keymap.set("n", "Q", "<nop>")
 
-vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
+vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux new tmux-sessionizer<CR>")
 
 vim.keymap.set("n", "<leader>n", [[:%s/\<<C-r><C-w>\>//gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
@@ -42,6 +42,9 @@ vim.keymap.set("n", "<leader>ck", ":cprev<CR>")
 vim.keymap.set("n", "<leader>co", ":copen<CR>")
 vim.keymap.set("n", "<leader>cc", ":cclose<CR>")
 
+vim.keymap.set("n", "<leader>fp", ":let @+ = expand('%:p')<CR>"); -- file path
+vim.keymap.set("n", "<leader>rfp", ":let @+ = expand('%:.')<CR>"); -- relative file path
+
+
 -- using defx instead of netrw
 -- vim.keymap.set("n", "ssf", "<cmd>Ex<CR>") 
-
