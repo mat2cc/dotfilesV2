@@ -3,6 +3,11 @@
 !.gitignore
 !tmux/
 
+# window managers
+!skhd
+!yabai
+!sketchybar
+
 # fish including only the useful stuff
 !fish/
 fish/*
