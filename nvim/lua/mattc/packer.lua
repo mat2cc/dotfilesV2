@@ -79,15 +79,6 @@ return require("packer").startup(function(use)
         require('neorg').setup {
             load = {
                 ["core.defaults"] = {}, -- Loads default behaviour
-                ["core.norg.concealer"] = {
-                  icons = {
-                    todo = {
-                      undone = {
-                        icon = "_"
-                      }
-                    }
-                  }
-                }, -- Adds pretty icons to your documents
                 ["core.norg.dirman"] = { -- Manages Neorg workspaces
                     config = {
                         workspaces = {
