@@ -1,7 +1,7 @@
 return {
     "nvim-neorg/neorg",
     version = "*",
-    config = {
+    opts = {
         load = {
             ["core.defaults"] = {}, -- Loads default behaviour
             ["core.norg.dirman"] = { -- Manages Neorg workspaces

@@ -8,7 +8,7 @@ return {
         'rose-pine/neovim',
         name = 'rose-pine',
         lazy = true,
-        config = { dark_variant = 'moon' } -- moon | main
+        opts = { dark_variant = 'moon' } -- moon | main
     },
 }
 
