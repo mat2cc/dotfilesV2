@@ -33,4 +33,6 @@ return {
         "Shougo/defx.nvim",
         build = ":UpdateRemotePlugins"
     },
+    lazy = false,
+    priority = 100 
 }

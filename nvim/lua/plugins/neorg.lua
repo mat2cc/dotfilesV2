@@ -4,6 +4,7 @@ return {
     opts = {
         load = {
             ["core.defaults"] = {}, -- Loads default behaviour
+            ["core.norg.concealer"] = {}, -- Loads default behaviour
             ["core.norg.dirman"] = { -- Manages Neorg workspaces
                 config = {
                     workspaces = {
@@ -17,5 +18,6 @@ return {
     dependencies = "nvim-lua/plenary.nvim",
     keys = {
       { "<leader>ne", ":Neorg workspace notes<CR>"}
-    }
+    },
+    priority = 60
 }
