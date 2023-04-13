@@ -13,7 +13,7 @@ return {
         dependencies = {
             -- LSP Support
             { "neovim/nvim-lspconfig" },
-            { "williamboman/mason.nvim" },
+            { "williamboman/mason.nvim", cmd = "Mason" },
             { "williamboman/mason-lspconfig.nvim" },
             { "simrat39/rust-tools.nvim" },
 
@@ -30,7 +30,7 @@ return {
             { "rafamadriz/friendly-snippets" },
         }
     },
-    "github/copilot.vim",
+    { "github/copilot.vim", lazy = false },
     {
         "kylechui/nvim-surround",
         version = "*", -- Use for stability; omit to use `main` branch for the latest features

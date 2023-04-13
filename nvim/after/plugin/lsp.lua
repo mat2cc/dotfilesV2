@@ -5,7 +5,7 @@ lsp.preset("recommended")
 lsp.ensure_installed({
   'tsserver',
   'eslint',
-  'rust_analyzer',
+  'rust_analyzer'
 })
 
 local has_words_before = function()
@@ -60,8 +60,8 @@ cmp.setup(cmp_config)
 -- disable completion with tab
 -- this helps with copilot setup
 
-cmp_mappings['<Tab>'] = nil
-cmp_mappings['<S-Tab>'] = nil
+cmp_mappings['<Tab>'] = cmp.config.disable
+cmp_mappings['<S-Tab>'] = cmp.config.disable
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings

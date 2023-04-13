@@ -63,7 +63,7 @@ ctrl + alt - q : brew services stop yabai
 ctrl + alt - s : brew services start yabai
 ctrl + alt - r : brew services restart yabai
 
-alt - right : yabai -m window --resize right:40:0
-alt - left : yabai -m window --resize left:-40:0
-shift + alt - right : yabai -m window --resize left:40:0
-shift + alt - left : yabai -m window --resize right:-40:0
+alt - right : yabai -m window --resize right:80:0
+alt - left : yabai -m window --resize left:-80:0
+shift + alt - right : yabai -m window --resize left:80:0
+shift + alt - left : yabai -m window --resize right:-80:0

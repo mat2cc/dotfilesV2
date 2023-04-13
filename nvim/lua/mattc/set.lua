@@ -30,3 +30,4 @@ vim.g.mapleader = " "
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.foldenable = false
+vim.opt.cursorline = true
