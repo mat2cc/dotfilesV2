@@ -24,5 +24,6 @@ require("lazy").setup('plugins', {})
 -- tokyonight
 -- tokyonight-moon, tokyonight-night, tokyonight-storm, tokyonight-day
 -- rose-pine
-vim.cmd.colorscheme "rose-pine"
+-- rose-pine
+vim.cmd.colorscheme "kanagawa-wave"
 
