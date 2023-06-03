@@ -29,10 +29,10 @@ return {
     },
     "nvim-treesitter/playground",
     "nvim-treesitter/nvim-treesitter-context",
-    {
-        "Shougo/defx.nvim",
-        build = ":UpdateRemotePlugins"
-    },
+    -- {
+    --     "Shougo/defx.nvim",
+    --     build = ":UpdateRemotePlugins"
+    -- },
     lazy = false,
-    priority = 100 
+    priority = 100
 }

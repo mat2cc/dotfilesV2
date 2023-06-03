@@ -13,7 +13,7 @@ return {
         dependencies = {
             -- LSP Support
             { "neovim/nvim-lspconfig" },
-            { "williamboman/mason.nvim", cmd = "Mason" },
+            { "williamboman/mason.nvim",          cmd = "Mason" },
             { "williamboman/mason-lspconfig.nvim" },
             { "simrat39/rust-tools.nvim" },
 
@@ -36,4 +36,16 @@ return {
         version = "*", -- Use for stability; omit to use `main` branch for the latest features
         config = true
     },
+
+    {
+        "folke/zen-mode.nvim",
+        opts = {
+            width = .8
+        },
+        cmd = "ZenMode",
+        keys = {
+            { "<leader>zz", ":ZenMode<CR>" }
+        },
+
+    }
 }

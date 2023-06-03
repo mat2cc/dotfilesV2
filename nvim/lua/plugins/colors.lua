@@ -3,7 +3,6 @@ return {
     { "morhetz/gruvbox",            lazy = true },
     { "Shatur/neovim-ayu",          lazy = true },
     { "folke/tokyonight.nvim",      lazy = true },
-    { "loctvl842/monokai-pro.nvim", lazy = true },
     { "rebelot/kanagawa.nvim",      lazy = true,
         opts = {
             colors = {

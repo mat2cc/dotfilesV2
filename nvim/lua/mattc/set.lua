@@ -31,3 +31,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.opt.foldenable = false
 vim.opt.cursorline = true
+vim.opt.guicursor = "i-ci:ver30-block-blinkwait200-blinkon100-blinkoff100"
+
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
