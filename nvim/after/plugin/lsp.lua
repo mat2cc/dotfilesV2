@@ -62,6 +62,7 @@ cmp.setup(cmp_config)
 
 cmp_mappings['<Tab>'] = cmp.config.disable
 cmp_mappings['<S-Tab>'] = cmp.config.disable
+cmp_mappings['<CR>'] = cmp.config.disable
 
 lsp.setup_nvim_cmp({
   mapping = cmp_mappings
